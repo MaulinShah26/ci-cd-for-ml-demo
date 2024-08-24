@@ -8,13 +8,13 @@ jobs:
   build:
     runs_on:ubuntu_latest
     steps:
-    - name: Checkout
-     uses: actions/checkout@V3
-    - name: Setup Python
-     uses: actions/setup-python@v4
-       with:
-         python-version: 3.9
-    - name : Run Python Script
-      run: |
-        echo hello_world.py
-        python hello_world.py
+      - name: Checkout
+        uses: actions/checkout@V3
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.9
+        - name : Run Python Script
+          run: |
+            echo hello_world.py
+            python hello_world.py
